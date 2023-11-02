@@ -118,6 +118,16 @@ function get_critical_css($file_name) {
     echo '</style>';
 }
 
+
+function get_critical_js($file_name) {
+    echo '<script defer>';
+    $js_file_path = get_template_directory() . '/assets/js/' . $file_name;
+    if (file_exists($js_file_path)) {
+        echo file_get_contents($js_file_path);
+    }
+    echo '</script>';
+}
+
 // Lazy Load Iframe
 
 add_filter('the_content', function($content) {
