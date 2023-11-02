@@ -169,6 +169,12 @@
                 text-decoration: none;
                 color: $flat6;
             }
+            em {
+                font-style: italic;
+            }
+            strong {
+                font-weight: bold;
+            }
 
             blockquote,
             blockquote p,
@@ -234,13 +240,13 @@
 
             iframe {
                 aspect-ratio: 12 / 7;
-                width: 100% !important;
+                max-width: 100%;
                 height: auto;
             }
 
-            .wp-embedded-content {
-                width: 70%;
-                height: auto;
+            iframe.wp-embedded-content {
+                width: 100%;
+                height: 600px;
             }
 
             ol {
