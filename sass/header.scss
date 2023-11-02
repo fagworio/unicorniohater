@@ -1,0 +1,185 @@
+@import './variables/variables.scss';
+
+header {
+    border-top: 0.5rem solid transparent;
+    border-image: linear-gradient(to right, $flat1, $flat2, $flat3, $flat4, $flat5);
+    border-image-slice: 1;
+    animation: gradientBorderAnimation 5s ease infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    .topbar {
+        position: relative;
+    }
+    .inner-header {
+        display: flex;
+        justify-content: center;
+        font-family: 'Courier New',monospace;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $black;
+        max-width: 90rem;
+        width: 100%;
+        margin: 0 auto;
+        > nav {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-width: 320px;
+            max-width: 100%;
+            padding: 0 1rem;
+            margin-bottom: 2rem;
+            > p {
+                > a {
+                    text-decoration: none;
+                    color: $flat4;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+        }
+        
+    }
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 90rem;
+        .topbar-right {
+            .search-icon {
+                cursor: pointer;
+                display: block;
+            }
+        }
+    }
+
+    .main-logo {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 150px;
+            width: 100%;
+            margin: 1rem auto 0rem auto;
+            object-fit: cover;
+        }
+    }
+
+    nav.main-nav.sticky {
+        background-color: $bgWhite;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 9;
+    }
+
+    .main-nav {
+        ul {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            overflow-x: auto;
+            padding: 1rem 1rem;
+            -webkit-overflow-scrolling: touch;
+            li {
+                display: inline;
+                background: $black;
+                border-radius: 0.188rem;
+                padding: 0.8rem;
+                margin-left: 0.5rem;
+                font-weight: bolder;
+                // &:nth-child(1) {
+                //     background: #0595a2;
+                // }
+                // &:nth-child(2) {
+                //     background: #01904b;
+                // }
+                // &:nth-child(3) {
+                //     background: #b7cc3d;
+                // }
+                // &:nth-child(4) {
+                //     background: #facc33;
+                // }
+                // &:nth-child(5) {
+                //     background: #fa845c;
+                // }
+                // &:nth-child(6) {
+                //     background: #29d4b4;
+                // }
+                // &:first-child {
+                //     margin-left: 0;
+                // }
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 1rem;
+                    font-family: $NotosansMedium;
+                }
+            }
+        }
+    }
+    li.active {
+        filter: saturate(3);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        .inner-header {
+            padding-top: 1rem;
+            nav {
+                margin-bottom: 0;
+            }
+        }
+        .main-logo {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            img {
+                max-width: 150px;
+                width: 100%;
+                margin: 1rem auto 0rem auto;
+                object-fit: cover;
+            }
+        }
+        nav.main-nav.sticky {
+            background-color: $bgWhite;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 9;
+        }
+        .main-nav {
+            ul {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                overflow-x: auto;
+                padding: 1rem 1rem;
+                -webkit-overflow-scrolling: touch;
+                li {
+                    display: inline;
+                    border-radius: 0.188rem;
+                    padding: 0.8rem;
+                    margin-left: 0.5rem;
+                    a {
+                        text-decoration: none;
+                        color: $white;
+                        font-size: 1rem;
+                        font-family: $NotosansMedium;
+                    }
+                }
+            }
+        }
+        li.active {
+            filter: saturate(3);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+    
+    }
+}

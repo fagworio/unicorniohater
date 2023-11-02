@@ -1,0 +1,196 @@
+.page-content {
+  max-width: 62.75rem;
+  width: 100%;
+}
+
+.page-content article {
+  padding: 0 4rem 4rem 4rem;
+  color: black;
+}
+
+.page-content article .wp-caption-text {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  color: #595959;
+  line-height: 1.3rem;
+  font-style: italic;
+  color: #595959;
+  padding: 0.5rem 0;
+}
+
+.page-content article img {
+  max-width: 54.78rem;
+  width: 100%;
+  height: auto;
+}
+
+.page-content article h1 {
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3.5rem;
+  color: black;
+  padding: 1rem 0;
+}
+
+.page-content article h2 {
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: bold;
+  color: black;
+  padding: 1rem 0;
+}
+
+.page-content article h3 {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: bold;
+  color: black;
+  padding: 1rem 0;
+}
+
+.page-content article h4 {
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: black;
+  padding: 1rem 0;
+}
+
+.page-content article h5 {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: black;
+  padding: 1rem 0;
+}
+
+.page-content article h6 {
+  font-family: Georgia, serif;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  color: black;
+  padding: 1rem 0;
+}
+
+.page-content article p {
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding: 0.8rem 0;
+}
+
+.page-content article a {
+  text-decoration: none;
+  color: #ff00de;
+}
+
+.page-content article blockquote,
+.page-content article blockquote p,
+.page-content article blockquote h2,
+.page-content article blockquote h3,
+.page-content article blockquote h3,
+.page-content article blockquote h4,
+.page-content article blockquote h5,
+.page-content article blockquote h6 {
+  font-family: Georgia, serif;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: #0D0D0D;
+  background: #e6f4f9;
+}
+
+.page-content article blockquote figcaption {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  color: #595959;
+}
+
+@media screen and (max-width: 767px) {
+  .page-content {
+    max-width: 100%;
+  }
+  .page-content article {
+    padding: 1rem 1rem;
+    color: black;
+  }
+  .page-content article h1 {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    color: black;
+    padding: 1rem 0;
+  }
+  .page-content article h2 {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: black;
+    padding: 1rem 0;
+  }
+  .page-content article h3 {
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: black;
+    padding: 1rem 0;
+  }
+  .page-content article h4 {
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: black;
+    padding: 1rem 0;
+  }
+  .page-content article h5 {
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: black;
+    padding: 1rem 0;
+  }
+  .page-content article h6 {
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: black;
+    padding: 1rem 0;
+  }
+  .page-content article p {
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .page-content article a {
+    text-decoration: none;
+    color: #ff00de;
+  }
+  .page-content article blockquote,
+  .page-content article blockquote p,
+  .page-content article blockquote h2,
+  .page-content article blockquote h3,
+  .page-content article blockquote h3,
+  .page-content article blockquote h4,
+  .page-content article blockquote h5,
+  .page-content article blockquote h6 {
+    font-family: Georgia, serif;
+    padding: 1rem 1rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: #0D0D0D;
+    background: #e6f4f9;
+  }
+  .page-content article blockquote figcaption {
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    color: #595959;
+  }
+}

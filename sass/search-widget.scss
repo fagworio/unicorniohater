@@ -1,0 +1,32 @@
+@import './variables/variables.scss';
+.widget_searchbar_widget {
+    padding: 1rem 1rem;  
+    > #searchWidgetForm {
+      display: flex;
+    }
+  
+    button#searchWidgetSubmit {
+      cursor: pointer;
+      border: 1px solid $bg3;
+      margin-left: -1px;
+      border-radius: 0 0.25rem 0.25rem 0;
+      padding: 0 1rem;
+      height: 42px;
+      line-height: 42px;
+      background: $bg3;
+  
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  
+    > #searchWidgetForm > input[type=text] {
+      height: 1.5rem;
+      padding: 0.5rem;
+      border: 1px solid $bg3;
+      border-radius: 0.25rem 0 0 0.25rem;
+      font-family: sans-serif;
+      font-size: 1rem;
+    }
+  }
+  

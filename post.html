@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="contet-ads mobile">
+                <a href="#"><img src="./images/diletec-ads-mobile.webp" width="320" height="100" alt="banner"
+                        loading="lazy"></a>
+            </div>
+
+            <div class="contet-ads desktop">
+                <a href="#"><img src="./images/diletec-ads-desktop.webp" width="970" height="90" alt="banner"
+                        loading="lazy"></a>
+            </div>
+        </section>
+        <div class="topbar">
+            <div class="container">
+                <div class="topbar-right">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="main-logo">
+            <a href="#"><img src="./images/logo.webp" width="150" height="124" alt="logo" loading="lazy"></a>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#noticias">Notícias</a></li>
+                <li class="active"><a href="#games">Games</a></li>
+                <li><a href="#animes">Animes</a></li>
+                <li><a href="#criticas">Críticas</a></li>
+                <li><a href="#quadrinhos">Quadrinhos</a></li>
+                <li><a href="#quadrinhos">Cinemas</a></li>
+            </ul>
+        </nav>
+        <div class="inner-header">
+            <a href="#">Inicio</a> ><a href="#">Games</a> > <a href="#">Imagem de Godzilla Minus</a>
+        </div>
+    </header>
+
+    <section class="full-width">
+        <div class="post-content">
+            <article>
+                <div class="post-header">
+                    <ul class="post-category">
+                        <li><a href="#">Notícia</a></li>
+                        <li><a href="#">Notícia</a></li>
+                    </ul>
+                    <h1 class="post-title">‘Missão: Impossível – Dead Reckoning Parte Dois’ de Tom Cruise adiada; Também
+                        receberá novo título após o fracasso de bilheteria do primeiro filme
+                    </h1>
+                    <div class="post-meta">
+                        <time itemprop="datePublished" datetime="2020-08-11T19:30:13-03:00">11/08/2020</time>
+                        <span>/ João Fagner</span>
+                    </div>
+                    <div class="social-share">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"
+                                    target="_blank" class="facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 448 512">
+                                        <path
+                                            d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>"
+                                    target="_blank" class="x-twitter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 448 512">
+                                        <path
+                                            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php the_post_thumbnail_url(); ?>&description=<?php the_title(); ?>"
+                                    target="_blank" class="pinterest">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 448 512">
+                                        <path
+                                            d="M448 80v352c0 26.5-21.5 48-48 48H154.4c9.8-16.4 22.4-40 27.4-59.3 3-11.5 15.3-58.4 15.3-58.4 8 15.3 31.4 28.2 56.3 28.2 74.1 0 127.4-68.1 127.4-152.7 0-81.1-66.2-141.8-151.4-141.8-106 0-162.2 71.1-162.2 148.6 0 36 19.2 80.8 49.8 95.1 4.7 2.2 7.1 1.2 8.2-3.3.8-3.4 5-20.1 6.8-27.8.6-2.5.3-4.6-1.7-7-10.1-12.3-18.3-34.9-18.3-56 0-54.2 41-106.6 110.9-106.6 60.3 0 102.6 41.1 102.6 99.9 0 66.4-33.5 112.4-77.2 112.4-24.1 0-42.1-19.9-36.4-44.4 6.9-29.2 20.3-60.7 20.3-81.8 0-53-75.5-45.7-75.5 25 0 21.7 7.3 36.5 7.3 36.5-31.4 132.8-36.1 134.5-29.6 192.6l2.2.8H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/unicornio_hater/" target="_blank" class="instagran">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 448 512">
+                                        <path
+                                            d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="copyToClipboard('<?php the_permalink(); ?>')"
+                                    class="copy-andshare">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 576 512">
+                                        <path
+                                            d="M352 224H305.5c-45 0-81.5 36.5-81.5 81.5c0 22.3 10.3 34.3 19.2 40.5c6.8 4.7 12.8 12 12.8 20.3c0 9.8-8 17.8-17.8 17.8h-2.5c-2.4 0-4.8-.4-7.1-1.4C210.8 374.8 128 333.4 128 240c0-79.5 64.5-144 144-144h80V34.7C352 15.5 367.5 0 386.7 0c8.6 0 16.8 3.2 23.2 8.9L548.1 133.3c7.6 6.8 11.9 16.5 11.9 26.7s-4.3 19.9-11.9 26.7l-139 125.1c-5.9 5.3-13.5 8.2-21.4 8.2H384c-17.7 0-32-14.3-32-32V224zM80 96c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16H400c8.8 0 16-7.2 16-16V384c0-17.7 14.3-32 32-32s32 14.3 32 32v48c0 44.2-35.8 80-80 80H80c-44.2 0-80-35.8-80-80V112C0 67.8 35.8 32 80 32h48c17.7 0 32 14.3 32 32s-14.3 32-32 32H80z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="featured-image">
+                        <img src="https://d17lbu6bbzbdc8.cloudfront.net/wp-content/uploads/2023/10/20081826/Os-superpoderes-de-Hulk-deixa-Guerra-Mundial-ainda-mais-emocionante.jpg"
+                            alt="Post Title" width="840" height="470">
+                    </div>
+                </div>
+                <div class="the-content">
+                <p><a href="">Lorem ipsum dolor sit</a>, amet consectetur adipisicing elit. Nostrum nesciunt commodi
+                    maxime
+                    vitae. Natus nobis officiis animi id distinctio eos nam repudiandae doloribus odio delectus!
+                    Voluptatibus adipisci repellendus eius perspiciatis?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum nesciunt commodi maxime vitae.
+                    Natus
+                    nobis officiis animi id distinctio eos nam repudiandae doloribus odio delectus! Voluptatibus
+                    adipisci
+                    repellendus eius perspiciatis?</p>
+                <figure class="wp-caption aligncenter"><img decoding="async" fetchpriority="high"
+                        src="https://boundingintocomics.com/wp-content/uploads/2023/06/2023.06.22-05.08-boundingintocomics-6494802227056-scaled.jpg"
+                        alt="Hayley Atwell e Tom Cruise em Missão: Impossível Dead Reckoning Parte Um da Paramount Pictures e Skydance."
+                        width="1728" height="2560"
+                        title="'Missão: Impossível - Dead Reckoning Parte Dois' De Tom Cruise Adiada; Também Receberá Novo Título Após O Fracasso De Bilheteria Do Primeiro Filme 1">
+                    <figcaption class="wp-caption-text"><a href="">Hayley Atwell</a> e Tom Cruise em Missão: Impossível
+                        Dead
+                        Reckoning Parte Um da Paramount Pictures e Skydance.</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum nesciunt commodi maxime vitae.
+                    Natus
+                    nobis officiis animi id distinctio eos nam repudiandae doloribus odio delectus! Voluptatibus
+                    adipisci
+                    repellendus eius perspiciatis?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum nesciunt commodi maxime vitae.
+                    Natus
+                    nobis officiis animi id distinctio eos nam repudiandae doloribus odio delectus! Voluptatibus
+                    adipisci
+                    repellendus eius perspiciatis?</p>
+
+                <div id="attachment_72230" class="wp-caption alignnone"><img aria-describedby="caption-attachment-72230"
+                        decoding="async" fetchpriority="high" class="size-full wp-image-72230"
+                        src="https://d17lbu6bbzbdc8.cloudfront.net/wp-content/uploads/2023/10/20081826/Os-superpoderes-de-Hulk-deixa-Guerra-Mundial-ainda-mais-emocionante.jpg"
+                        alt="Os superpoderes de Hulk deixa Guerra Mundial ainda mais emocionante" width="1280"
+                        height="720"
+                        srcset="https://d17lbu6bbzbdc8.cloudfront.net/wp-content/uploads/2023/10/20081826/Os-superpoderes-de-Hulk-deixa-Guerra-Mundial-ainda-mais-emocionante.jpg 1280w, https://d17lbu6bbzbdc8.cloudfront.net/wp-content/uploads/2023/10/20081826/Os-superpoderes-de-Hulk-deixa-Guerra-Mundial-ainda-mais-emocionante-300x169.jpg 300w, https://d17lbu6bbzbdc8.cloudfront.net/wp-content/uploads/2023/10/20081826/Os-superpoderes-de-Hulk-deixa-Guerra-Mundial-ainda-mais-emocionante-1024x576.jpg 1024w, https://d17lbu6bbzbdc8.cloudfront.net/wp-content/uploads/2023/10/20081826/Os-superpoderes-de-Hulk-deixa-Guerra-Mundial-ainda-mais-emocionante-768x432.jpg 768w, https://d17lbu6bbzbdc8.cloudfront.net/wp-content/uploads/2023/10/20081826/Os-superpoderes-de-Hulk-deixa-Guerra-Mundial-ainda-mais-emocionante-696x392.jpg 696w, https://d17lbu6bbzbdc8.cloudfront.net/wp-content/uploads/2023/10/20081826/Os-superpoderes-de-Hulk-deixa-Guerra-Mundial-ainda-mais-emocionante-1068x601.jpg 1068w, https://d17lbu6bbzbdc8.cloudfront.net/wp-content/uploads/2023/10/20081826/Os-superpoderes-de-Hulk-deixa-Guerra-Mundial-ainda-mais-emocionante-747x420.jpg 747w"
+                        sizes="(max-width: 1280px) 100vw, 1280px" title="Unicórniohater 1">
+                    <p id="caption-attachment-72230" class="wp-caption-text">Os superpoderes de Hulk deixa Guerra
+                        Mundial ainda mais emocionante</p>
+                </div>
+
+
+                <blockquote>
+                    <p>Imagination is more important than knowledge.</p>
+                    <figcaption><a href="">- Albert Einstein</a></figcaption>
+                </blockquote>
+
+                <div class="post-ads">
+                    <div class="contet-ads mobile">
+                        <a href="#"><img src="./images/diletec-ads-mobile.webp" width="320" height="100" alt="banner"
+                                loading="lazy"></a>
+                    </div>
+            
+                    <div class="contet-ads desktop">
+                        <a href="#"><img src="./images/diletec-ads-desktop.webp" width="970" height="90" alt="banner"
+                        loading="lazy"></a>
+                    </div>
+                </div>
+                </div>
+               
+
+            
+            
+            </article>
+            <aside>
+                <div class="sidebar">
+                    <h3>Last Posts</h3>
+                    <ul>
+                        <li>
+                            <a href="">Missão: Impossível – Dead Reckoning Parte Dois’ de Tom Cruise adiada; Também.</a>
+                        </li>
+                        <li>
+                            <a href="">Missão: Impossível – Dead Reckoning Parte Dois’ de Tom Cruise adiada; Também.</a>
+                        </li>
+                        <li>
+                            <a href="">Missão: Impossível – Dead Reckoning Parte Dois’ de Tom Cruise adiada; Também.</a>
+                        </li>
+                        <li>
+                            <a href="">Missão: Impossível – Dead Reckoning Parte Dois’ de Tom Cruise adiada; Também.</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <h2>Unicórnio Hater</h2>
+        <div class="footer-desc">
+            <div class="footer-desc-logo">
+                <a href="#"><img src="./images/logo.webp" alt="logo" loading="lazy"></a>
+                <div class="footer-desc-text">
+                    Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae
+                    nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum
+                    dolor ullamcorper sodales ultrices eros.
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="footer-links">
+            <div class="footer-links-item">
+                <h3 id="menuTitle1">Links <span class="icon-chevron"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512">
+                            <path
+                                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                        </svg></span></h3>
+                <ul class="nav-footer" id="menu1">
+                    <li class="nav-item"><a href="#" class="link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="link">Our Works</a></li>
+                    <li class="nav-item"><a href="#" class="link">About</a></li>
+                    <li class="nav-item"><a href="#" class="link">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-item">
+                <h3 id="menuTitle2">Redes Sociais<span class="icon-chevron"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512">
+                            <path
+                                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                        </svg></span></h3>
+                <ul class="nav-footer" id="menu2">
+                    <li class="nav-item"><a href="#" class="link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="link">Our Works</a></li>
+                    <li class="nav-item"><a href="#" class="link">About</a></li>
+                    <li class="nav-item"><a href="#" class="link">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-copyright">©UnicórnioHater 2023</div>
+        <script>
+            function copyToClipboard(text) {
+                var textArea = document.createElement("textarea");
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+            }
+        </script>
+    </footer>
+
+</body>
+
+</html>

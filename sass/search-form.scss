@@ -1,0 +1,128 @@
+@import './variables/variables.scss';
+
+.search-header {
+  padding: 2rem 2rem;
+
+  > {
+    .page-title {
+      font-family: $NotosansMedium;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+
+      > .search-query {
+        font-size: 2rem;
+        color: $flat6;
+      }
+    }
+
+    .search-form {
+      max-width: 50rem;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 1rem;
+
+      .screen-reader-text {
+        font-size: 2rem;
+        padding: 1rem 0;
+        display: block;
+      }
+
+      > div {
+        position: relative;
+      }
+
+      input {
+        &[type='text'] {
+          width: 80%;
+          height: 2.1rem;
+          padding: 1rem;
+          font-family: $NotosansMedium;
+          font-size: 1.8rem;
+          border-radius: 0.5rem 0 0 0.5rem;
+          border: 1px solid $flat6;
+        }
+
+        &[type='submit'] {
+          position: absolute;
+          height: 4.2rem;
+          width: 6rem;
+          border-radius: 0 0.5rem 0.5rem 0;
+          border: 1px solid $flat6;
+          background: $flat6;
+          color: $white;
+          cursor: pointer;
+          margin-left: -1px;
+          text-transform: uppercase;
+          font-family: sans-serif;
+          font-weight: bolder;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .search-header {
+    padding: 2rem 2rem;
+
+    > {
+      .page-title {
+        font-family: $NotosansMedium;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+
+        > .search-query {
+          font-size: 1rem;
+          color: $flat6;
+        }
+      }
+
+      .search-form {
+        max-width: 50rem;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 1rem;
+
+        .screen-reader-text {
+          font-size: 1.5rem;
+          padding: 1rem 0;
+          display: block;
+        }
+
+        > div {
+          position: relative;
+        }
+
+        input {
+          &[type='text'] {
+            width: 59%;
+            height: 2.1rem;
+            padding: 1rem;
+            font-family: $NotosansMedium;
+            font-size: 1rem;
+            border-radius: 0.5rem 0 0 0.5rem;
+            border: 1px solid $flat6;
+          }
+
+          &[type='submit'] {
+            position: absolute;
+            height: 4.3rem;
+            width: 6rem;
+            border-radius: 0 0.5rem 0.5rem 0;
+            border: 1px solid $flat6;
+            background: $flat6;
+            color: $white;
+            cursor: pointer;
+            margin-left: -1px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

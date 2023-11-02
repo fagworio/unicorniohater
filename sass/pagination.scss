@@ -1,0 +1,51 @@
+@import './variables/variables.scss';
+
+.the-pagination {
+  display: flex;
+  justify-content: center;
+  #pagination {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding: 1rem 1rem;
+    li {
+      display: inline;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 5px 10px;
+        color: #000;
+        border-radius: 5px;
+        -webkit-transition: background-color 0.3s;
+        transition: background-color 0.3s;
+        font-family: sans-serif;
+        font-size: 1rem;
+        line-height: 1.1rem;
+
+        &.active {
+          background-color: $flat6;
+          color: #fff;
+        }
+
+        &:hover:not(.active) {
+          background-color: #ddd;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .the-pagination {
+    #pagination {
+      li {
+        display: inline;
+        a {
+          font-size: 0.9rem;
+          line-height: 1.1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "seu-projeto",
+  "version": "1.0.0",
+  "description": "Descrição do seu projeto",
+  "scripts": {
+    "watch": "node-sass sass/index.scss assets/css/style.css --watch",
+    "sass": "node-sass sass/index.scss assets/css/style.css",
+    "build": "node-sass sass/index.scss assets/css/style.css && cleancss -o assets/css/style.min.css assets/css/style.css",
+    "build:critical:base": "node-sass sass/base.scss assets/critical/base.css --output-style expanded && cleancss -o assets/critical/base.min.css assets/critical/base.css",
+    "build:critical:header": "node-sass sass/header.scss assets/critical/header.css --output-style expanded && cleancss -o assets/critical/header.min.css assets/critical/header.css",
+    "build:critical:content-news": "node-sass sass/content-news.scss assets/critical/content-news.css --output-style expanded && cleancss -o assets/critical/content-news.min.css assets/critical/content-news.css",
+    "build:critical:content-radom": "node-sass sass/content-radom.scss assets/critical/content-radom.css --output-style expanded && cleancss -o assets/critical/content-radom.min.css assets/critical/content-radom.css",
+    "build:critical:content-category": "node-sass sass/content-category.scss assets/critical/content-category.css --output-style expanded && cleancss -o assets/critical/content-category.min.css assets/critical/content-category.css",
+    "build:critical:footer": "node-sass sass/footer.scss assets/critical/footer.css --output-style expanded && cleancss -o assets/critical/footer.min.css assets/critical/footer.css",
+    "build:critical:page": "node-sass sass/page.scss assets/critical/page.css --output-style expanded && cleancss -o assets/critical/page.min.css assets/critical/page.css",
+    "build:critical:post": "node-sass sass/post.scss assets/critical/post.css --output-style expanded && cleancss -o assets/critical/post.min.css assets/critical/post.css",
+    "build:critical:pagination": "node-sass sass/pagination.scss assets/critical/pagination.css --output-style expanded && cleancss -o assets/critical/pagination.min.css assets/critical/pagination.css",
+    "build:critical:comments": "node-sass sass/comments.scss assets/critical/comments.css --output-style expanded && cleancss -o assets/critical/comments.min.css assets/critical/comments.css",
+    "build:critical:search": "node-sass sass/search.scss assets/critical/search.css --output-style expanded && cleancss -o assets/critical/search.min.css assets/critical/search.css",
+    "build:critical:search-widget": "node-sass sass/search-widget.scss assets/critical/search-widget.css --output-style expanded && cleancss -o assets/critical/search-widget.min.css assets/critical/search-widget.css",
+    "build:critical:search-form": "node-sass sass/search-form.scss assets/critical/search-form.css --output-style expanded && cleancss -o assets/critical/search-form.min.css assets/critical/search-form.css",
+    "build:critical": "npm run build:critical:header && npm run build:critical:footer && npm run build:critical:base && npm run build:critical:content-category && npm run build:critical:content-news && npm run build:critical:content-radom && npm run build:critical:page && npm run build:critical:post && npm run build:critical:pagination && npm run build:critical:comments && npm run build:critical:search && npm run build:critical:search-form && npm run build:critical:search-widget"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "clean-css-cli": "^5.3.0"
+  }
+}

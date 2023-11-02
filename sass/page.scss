@@ -1,0 +1,192 @@
+@import './variables/variables.scss';
+
+.page-content {
+    max-width: 62.75rem;
+    width: 100%;
+    article {
+        padding: 0 4rem 4rem 4rem; 
+        color: $black;
+            .wp-caption-text {
+                font-family: $NotosansRegular;
+                font-size: 1rem;
+                color: $dark3;
+                line-height: 1.3rem;
+                font-style: italic;
+                color: $dark3;
+                padding: 0.5rem 0;
+            }
+        img {
+            max-width: 54.78rem;
+            width: 100%;
+            height: auto;
+        }
+        h1 {
+            font-family: $NotosansMedium;
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 3.5rem;
+            color: $black;
+            padding: 1rem 0;
+        }
+        h2 {
+            font-family: $NotosansMedium;
+            font-size: 2.5rem;
+            line-height: 3rem;
+            font-weight: bold;
+            color: $black;
+            padding: 1rem 0;
+        }
+        h3 {
+            font-family: $NotosansMedium;
+            font-size: 2rem;
+            line-height: 2.3rem;
+            font-weight: bold;
+            color: $black;
+            padding: 1rem 0;
+        }
+        h4 {
+            font-family: $NotosansMedium;
+            font-size: 1.8rem;
+            line-height: 1.8rem;
+            color: $black;
+            padding: 1rem 0;
+        }
+        h5 {
+            font-family: $NotosansMedium;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            color: $black;
+            padding: 1rem 0;
+        }
+        h6 {
+            font-family: $NotosansMedium;
+            font-size: 1.3rem;
+            line-height: 1.3rem;
+            color: $black;
+            padding: 1rem 0;
+        }
+        p {
+            font-family: $NotosansRegular;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            padding: 0.8rem 0;
+        }
+        a {
+            text-decoration: none;
+            color: $flat6;
+        }
+
+        blockquote,
+        blockquote p,
+        blockquote h2, 
+        blockquote h3, 
+        blockquote h3, 
+        blockquote h4, 
+        blockquote h5, 
+        blockquote h6 {
+            font-family: $NotosansRegular;
+            padding: 1rem 1rem;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+            color: $dark5;
+            background: $flat7;
+        }
+
+        blockquote figcaption {
+            font-family: $NotosansRegular;
+            font-size: 1rem;
+            color: $dark3;
+        }
+    }
+ 
+}
+
+@media screen and (max-width: 767px) {
+    .page-content {
+        max-width: 100%;
+        article {
+            padding: 1rem 1rem; 
+            color: $black;
+
+            h1 {
+                font-family: $NotosansMedium;
+                font-size: 2rem;
+                line-height: 2.2rem;
+                color: $black;
+                padding: 1rem 0;
+            }
+            h2 {
+                font-family: $NotosansMedium;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                color: $black;
+                padding: 1rem 0;
+            }
+            h3 {
+                font-family: $NotosansMedium;
+                font-size: 1.3rem;
+                line-height: 1.8rem;
+                color: $black;
+                padding: 1rem 0;
+            }
+            h4 {
+                font-family: $NotosansMedium;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                color: $black;
+                padding: 1rem 0;
+            }
+            h5 {
+                font-family: $NotosansMedium;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                color: $black;
+                padding: 1rem 0;
+            }
+            h6 {
+                font-family: $NotosansMedium;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                color: $black;
+                padding: 1rem 0;
+            }
+    
+            p {
+                font-family: $NotosansRegular;
+                font-size: 1.3rem;
+                line-height: 1.8rem;
+                margin-bottom: 1rem;
+            }
+            a {
+                text-decoration: none;
+                color: $flat6;
+            }
+    
+            blockquote,
+            blockquote p,
+            blockquote h2, 
+            blockquote h3, 
+            blockquote h3, 
+            blockquote h4, 
+            blockquote h5, 
+            blockquote h6 {
+                font-family: $NotosansRegular;
+                padding: 1rem 1rem;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                margin-bottom: 1rem;
+                font-style: italic;
+                color: $dark5;
+                background: $flat7;
+            }
+    
+            blockquote figcaption {
+                font-family: $NotosansRegular;
+                font-size: 1rem;
+                color: $dark3;
+            }
+        }
+    }
+}

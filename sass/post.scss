@@ -1,0 +1,584 @@
+@import './variables/variables.scss';
+
+.post-content {
+    display: flex;
+    max-width: 70rem;
+    width: 100%;
+    margin: 0 auto;
+    article {
+        padding: 0;
+        color: $black;
+        width: 100%;
+        > .post-header {
+            .post-category {
+                list-style: none;
+                display: flex;
+                > li {
+                    margin-right: 0.5rem;
+                    > a {
+                        text-decoration: none;
+                        font-family: 'Courier New', monospace;
+                        background: $flat3;
+                        padding: 0.2rem 0.4rem;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
+            h1 {
+                font-family: $NotosansMedium;
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+                font-weight: bold;
+                color: $black;
+                padding: 1rem 0;
+            }
+
+            > .subtitle {
+                font-family: $NotosansMedium;
+                font-size: 1.2rem;
+                line-height: 1.3rem;
+                font-style: italic;
+                color: $dark4;
+                display: block;
+                margin-bottom: 1rem;
+            }
+
+            .post-meta {
+                display: flex;
+                > time {
+                    font-family: 'Courier New', monospace;
+                    font-weight: 400;
+                    font-size: 0.9rem;
+                    display: block;
+                    color: $black;
+                    padding-bottom: 1rem;
+                }
+
+                > span {
+                    font-family: 'Courier New', monospace;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    margin-left: 1rem;
+                    color: $black;
+                }
+            }
+
+            .social-share {
+                display: flex;
+                justify-content: space-between;
+                margin-right: 1rem;
+                .respond {
+                    text-decoration: none;
+                    color: $black;
+                    font-size: 1rem;
+                    font-family: 'Courier New', monospace;
+                    svg {
+                        fill: #fcb045;
+                    }
+                }
+
+                > ul {
+                    display: flex;
+                    list-style: none;
+                    > li {
+                        padding-right: 0.5rem;
+                    }
+                }
+            }
+
+            .featured-image {
+                padding: 1rem 0;
+                > img {
+                    max-width: 840px;
+                    width: 100%;
+                    height: 470px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .the-content {
+            .wp-caption-text {
+                font-family: $NotosansRegular;
+                font-size: 1rem;
+                color: $dark3;
+                line-height: 1.3rem;
+                font-style: italic;
+                color: $dark3;
+                padding: 0.5rem 0;
+            }
+            img {
+                max-width: 54.78rem;
+                width: 100%;
+                height: auto;
+            }
+            h1 {
+                font-family: $NotosansMedium;
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+                font-weight: bold;
+                color: $black;
+                padding: 1rem 0;
+            }
+            h2 {
+                font-family: $NotosansMedium;
+                font-size: 2.5rem;
+                line-height: 3rem;
+                font-weight: bold;
+                color: $black;
+                padding: 1rem 0;
+            }
+            h3 {
+                font-family: $NotosansMedium;
+                font-size: 2rem;
+                line-height: 2.3rem;
+                font-weight: bold;
+                color: $black;
+                padding: 1rem 0;
+            }
+            h4 {
+                font-family: $NotosansMedium;
+                font-size: 1.8rem;
+                line-height: 1.8rem;
+                color: $black;
+                padding: 1rem 0;
+            }
+            h5 {
+                font-family: $NotosansMedium;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                color: $black;
+                padding: 1rem 0;
+            }
+            h6 {
+                font-family: $NotosansMedium;
+                font-size: 1.3rem;
+                line-height: 1.3rem;
+                color: $black;
+                padding: 1rem 0;
+            }
+            p {
+                font-family: $NotosansRegular;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                padding: 0.8rem 0;
+            }
+            a {
+                text-decoration: none;
+                color: $flat6;
+            }
+
+            blockquote,
+            blockquote p,
+            blockquote h2,
+            blockquote h3,
+            blockquote h3,
+            blockquote h4,
+            blockquote h5,
+            blockquote h6 {
+                font-family: $NotosansRegular;
+                padding: 1rem 1rem;
+                font-size: 2rem;
+                line-height: 2.5rem;
+                margin-bottom: 1rem;
+                font-style: italic;
+                color: $dark5;
+                background: $flat7;
+            }
+
+            table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.9em;
+                font-family: sans-serif;
+                min-width: 21.25rem;
+                box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.15);
+                overflow-x: auto;
+            }
+
+            table thead tr {
+                background-color: #009879;
+                color: #ffffff;
+                text-align: left;
+            }
+
+            th,
+            td {
+                padding: 1rem 1rem;
+            }
+
+            tbody tr {
+                border-bottom: 1px solid $bg2;
+            }
+
+            tbody tr:nth-of-type(even) {
+                background-color: bg2;
+            }
+
+            tbody tr:last-of-type {
+                border-bottom: 2px solid $flat3;
+            }
+
+            blockquote figcaption {
+                font-family: $NotosansRegular;
+                font-size: 1rem;
+                color: $dark3;
+            }
+
+            tbody tr.active-row {
+                font-weight: bold;
+                color: $flat3;
+            }
+
+            iframe {
+                aspect-ratio: 12 / 7;
+                width: 100% !important;
+                height: auto;
+            }
+
+            .wp-embedded-content {
+                width: 70%;
+                height: auto;
+            }
+
+            ol {
+                font-family: $NotosansRegular;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                padding: 0.8rem 0;
+                list-style-type: decimal;
+                padding-left: 1rem;
+
+                > li > ul {
+                    list-style-type: disc;
+                    margin-left: 1.25rem;
+
+                    > li > ol {
+                        list-style-type: decimal;
+                        margin-left: 1.25rem;
+                    }
+                }
+            }
+
+            ul {
+                font-family: $NotosansRegular;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                padding: 0.8rem 0;
+                list-style-type: disc;
+                padding-left: 1rem;
+                li {
+                    ol {
+                        list-style-type: decimal;
+                        margin-left: 1.25rem;
+                    }
+
+                    ul {
+                        list-style-type: disc;
+                        margin-left: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+    > aside {
+        width: 30%;
+        > .sidebar {
+            padding-left: 1.5rem;
+            h3 {
+                font-family: $NotosansRegular;
+                font-size: 1.3rem;
+                color: $flat6;
+                padding: 1rem 0;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            ul {
+                list-style: none;
+                > li {
+                    padding: 1rem 0;
+                    > a {
+                        text-decoration: none;
+                        font-family: sans-serif;
+                        font-size: 1rem;
+                        line-height: 1.1rem;
+                        font-weight: bold;
+                        color: $black;
+                        &:hover {
+                            color: $flat6;
+                        }
+                    }
+                }
+            }
+            .widget_related_posts {
+                ul {
+                    > li {
+                        display: flex;
+                        align-content: center;
+                        justify-content: center;
+                        align-items: center;
+                        > .related-numbers {
+                            font-family: $NotosansMedium;
+                            display: block;
+                            font-size: 2rem;
+                            color: $dark4;
+                            padding: 1rem;
+                        }
+                        > a {
+                            text-decoration: none;
+                            font-family: sans-serif;
+                            font-size: 1rem;
+                            line-height: 1.1rem;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+    .post-content {
+        max-width: 60rem;
+        > aside {
+            width: 30%;
+            > .sidebar {
+                padding-right: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .post-content {
+        max-width: 100%;
+        width: 100%;
+        flex-direction: column;
+        article {
+            padding: 0;
+            color: $black;
+            > .post-header {
+                > .post-category {
+                    > li {
+                        > a {
+                            font-size: 0.8rem;
+                            padding: 0.2rem 0.2rem;
+                        }
+                    }
+                }
+                > h1 {
+                    font-family: $NotosansMedium;
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                    color: $black;
+                    padding: 0 1rem;
+                }
+
+                > .subtitle {
+                    padding: 0 1rem;
+                    display: block;
+                    margin-bottom: 0;
+                }
+                > .post-meta {
+                    padding: 0.5rem 1rem;
+
+                    > span {
+                        font-family: 'Courier New', monospace;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        margin-left: 1rem;
+                        color: $black;
+                    }
+
+                    > time {
+                        padding-bottom: 0;
+                    }
+                }
+                > .social-share {
+                    padding: 0.5rem 1rem;
+                    margin-right: 0;
+                }
+
+                .featured-image {
+                    padding: 0;
+                    img {
+                        max-width: 100%;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .post-category {
+                    padding: 1rem;
+                }
+            }
+
+            > .the-content {
+                padding: 0 1rem;
+                h1 {
+                    font-family: $NotosansMedium;
+                    font-size: 2rem;
+                    line-height: 2.2rem;
+                    color: $black;
+                    padding: 1rem 0;
+                }
+
+                h2 {
+                    font-family: $NotosansMedium;
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                    color: $black;
+                    padding: 1rem 0;
+                }
+                h3 {
+                    font-family: $NotosansMedium;
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                    color: $black;
+                    padding: 1rem 0;
+                }
+                h4 {
+                    font-family: $NotosansMedium;
+                    font-size: 1.2rem;
+                    line-height: 1.5rem;
+                    color: $black;
+                    padding: 1rem 0;
+                }
+                h5 {
+                    font-family: $NotosansMedium;
+                    font-size: 1.2rem;
+                    line-height: 1.5rem;
+                    color: $black;
+                    padding: 1rem 0;
+                }
+                h6 {
+                    font-family: $NotosansMedium;
+                    font-size: 1.2rem;
+                    line-height: 1.5rem;
+                    color: $black;
+                    padding: 1rem 0;
+                }
+
+                p {
+                    font-family: $NotosansRegular;
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                    margin-bottom: 1rem;
+                }
+                a {
+                    text-decoration: none;
+                    color: $flat6;
+                }
+
+                blockquote,
+                blockquote p,
+                blockquote h2,
+                blockquote h3,
+                blockquote h3,
+                blockquote h4,
+                blockquote h5,
+                blockquote h6 {
+                    font-family: $NotosansRegular;
+                    padding: 1rem 1rem;
+                    font-size: 1.8rem;
+                    line-height: 2.5rem;
+                    margin-bottom: 1rem;
+                    font-style: italic;
+                    color: $dark5;
+                    background: $flat7;
+                }
+
+                blockquote figcaption {
+                    font-family: $NotosansRegular;
+                    font-size: 1rem;
+                    color: $dark3;
+                }
+
+                img {
+                    max-width: 100%;
+                    width: 100%;
+                }
+
+                ol {
+                    font-family: $NotosansRegular;
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                    padding: 0.8rem 0;
+                    list-style-type: decimal;
+                    padding: 2rem;
+    
+                    > li > ul {
+                        list-style-type: disc;
+                        margin-left: 0;
+    
+                        > li > ol {
+                            list-style-type: decimal;
+                            margin-left: 0;
+                        }
+                    }
+                }
+    
+                ul {
+                    font-family: $NotosansRegular;
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                    padding: 0.8rem 0;
+                    list-style-type: disc;
+                    padding: 2rem;
+                    li {
+                        ol {
+                            list-style-type: decimal;
+                            margin-left: 0;
+                        }
+    
+                        ul {
+                            list-style-type: disc;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        > aside {
+            width: 100%;
+            > .sidebar {
+                padding-left: 1.5rem;
+                > h3 {
+                    font-family: Georgia, serif;
+                    font-size: 2rem;
+                    color: #0d0d0d;
+                    padding: 1rem 0;
+                }
+                ul {
+                    list-style: none;
+                    > li {
+                        padding: 1rem 0;
+                        > a {
+                            font-size: 1.2rem;
+                            &:hover {
+                                color: $flat6;
+                            }
+                        }
+                    }
+                }
+
+                .widget_related_posts {
+                    ul {
+                        > li {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            > a {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

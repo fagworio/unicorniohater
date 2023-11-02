@@ -1,0 +1,151 @@
+@charset "UTF-8";
+#comments .comment-respond {
+  margin-top: 30px;
+  width: 94%;
+}
+
+#comments .comment-form-author, #comments .comment-form-email, #comments .comment-form-url {
+  margin-bottom: 15px;
+}
+
+#comments .comment-form-author label, #comments .comment-form-email label, #comments .comment-form-url label, #comments .comment-form-comment label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#comments .comment-form-author input, #comments .comment-form-email input, #comments .comment-form-url input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: black;
+  font-family: 'Courier New',monospace;
+}
+
+#comments .comment-form-comment textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: black;
+  font-family: 'Courier New',monospace;
+  resize: vertical;
+}
+
+#comments .form-submit input[type="submit"] {
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#comments .form-submit input[type="submit"]:hover {
+  background-color: #005bbd;
+}
+
+#comments .comment-form-cookies-consent {
+  font-size: 1.2rem;
+}
+
+#comments .comments-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#comments .comment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#comments .comment-list li {
+  margin-bottom: 1.5rem;
+}
+
+#comments .comment-author {
+  font-weight: bold;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+#comments .comment-author .says {
+  display: none;
+}
+
+#comments .comment-author > img.avatar {
+  max-width: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+#comments .comment-author cite {
+  display: block;
+  font-family: 'Courier New',monospace;
+}
+
+#comments .comment-number {
+  color: black;
+  font-size: 1rem;
+  font-family: 'Courier New',monospace;
+}
+
+#comments .comment-number > svg {
+  fill: #fcb045;
+}
+
+/* Estilo para a lista de comentários */
+.comment-icon {
+  display: flex;
+  justify-content: end;
+}
+
+#comments .comment-meta {
+  font-family: 'Courier New',monospace;
+  font-size: 0.6rem;
+  color: black;
+  font-size: 1rem;
+}
+
+#comments .comment.even.thread-even.depth-1 {
+  margin-left: 0;
+}
+
+#comments .comment.odd.alt.thread-odd.thread-alt {
+  margin-left: 2rem;
+}
+
+#comments .comment-body p {
+  font-size: 1rem;
+  font-family: 'Courier New',monospace;
+  line-height: 1.2rem;
+  background: #ffffcd;
+  padding: 1rem 1rem;
+}
+
+#comments .reply {
+  padding: 1rem 0;
+}
+
+#comments a.comment-reply-link {
+  font-family: 'Courier New',monospace;
+  text-decoration: none;
+  color: #0073e6;
+  font-size: 1.2rem;
+}
+
+#comments .comment-content {
+  margin-top: 10px;
+}
+
+#comments .comment-reply-link {
+  color: #0073e6;
+}
+
+#comments .comment-reply-link:hover {
+  color: #005bbd;
+}
