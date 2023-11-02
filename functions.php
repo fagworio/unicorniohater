@@ -34,6 +34,7 @@ add_action('wp_enqueue_scripts', function () {
 add_action('wp_enqueue_scripts', function () {
     if (!is_admin()) {
         wp_deregister_script('jquery-migrate');
+        wp_deregister_script( 'wp-embed' );
     }
 }, 11);
 
@@ -120,7 +121,7 @@ function get_critical_css($file_name) {
 // Lazy Load Iframe
 
 add_filter('the_content', function($content) {
-    $content = preg_replace('/<iframe\s/', '<iframe loading="lazy" ', $content);
+    $content = preg_replace('/<iframe\s/', '<iframe loading="lazy" width="100%" height="100%" style="border:0;" ', $content);
     return $content;
 });
 
