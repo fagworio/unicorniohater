@@ -11,13 +11,12 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/icon-logo.png" type="image/x-icon">
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/unicorniohater-ico.png" type="image/x-icon">
 
     <?php
     wp_head();
     get_critical_css('base.min.css');
     ?>
-
 </head>
 
 <body <?php body_class(); ?>>
@@ -62,7 +61,6 @@
                 if(!is_front_page() ) {
                     if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs();
                 }
-            
             ?>
         </div>
 
