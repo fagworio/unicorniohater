@@ -129,7 +129,7 @@
         </article>
         <!-- sidebar -->
         <?php
-        get_template_part('template-parts/right-sidebar');
+        get_template_part('template-parts/sidebars/right-sidebar');
         ?>
     </div>
 </section>

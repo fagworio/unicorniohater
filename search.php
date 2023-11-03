@@ -48,6 +48,6 @@ get_header();
 
 <?php
 get_template_part('template-parts/pagination');
-get_template_part('template-parts/sidebar-footer-global');
+get_template_part('template-parts/sidebars/sidebar-footer-global');
 get_footer();
 ?>

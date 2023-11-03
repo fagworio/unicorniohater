@@ -1,5 +1,5 @@
-
 <?php
+get_template_part('template-parts/sidebars/global-footer-sidebar');
 get_critical_css('footer.min.css');
 ?>
 
@@ -11,7 +11,7 @@ get_critical_css('footer.min.css');
                 <img width="150" height="124" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo.webp'); ?>" class="image-lazy" alt="<?php bloginfo('name'); ?>" decoding="async" loading="lazy" srcset="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo.webp'); ?> 150w" sizes="(max-width: 150px) 100vw, 150px">
             </a>
             <div class="footer-desc-text">
-                <?php get_template_part('template-parts/footer-sidebar'); ?>
+                <?php get_template_part('template-parts/sidebars/footer-sidebar'); ?>
             </div>
         </div>
 

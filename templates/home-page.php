@@ -20,13 +20,6 @@ get_template_part('template-parts/content-category');
 get_template_part('template-parts/content-radom');
 ?>
 
-
-<section class="ads-container">
-    <?php if (is_active_sidebar('global-footer-banner')) : ?>
-        <?php dynamic_sidebar('global-footer-banner'); ?>
-    <?php endif; ?>
-</section>
-
 <?php
 get_footer();
 ?>

@@ -62,7 +62,7 @@ get_header();
     </div> <!-- Fechando o div .content-random.latest-news-offset -->
 
     <?php
-    get_template_part('template-parts/sidebar-archive');
+    get_template_part('template-parts/sidebars/sidebar-archive');
     ?>
 
     </div>
@@ -73,6 +73,5 @@ get_header();
 
 <?php
 get_template_part('template-parts/pagination');
-get_template_part('template-parts/sidebar-footer-global');
 get_footer();
 ?>
