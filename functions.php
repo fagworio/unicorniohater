@@ -475,7 +475,6 @@ class Custom_Ads extends WP_Widget {
             echo $args['before_title'] . $title . $args['after_title'];
         }
 
-        // Aqui você insere seu HTML e JavaScript
         echo !empty($instance['text']) ? $instance['text'] : '';
 
         echo $args['after_widget'];
@@ -501,11 +500,12 @@ class Custom_Ads extends WP_Widget {
     public function update( $new_instance, $old_instance ) {
         $instance = array();
         $instance['title'] = (!empty($new_instance['title'])) ? strip_tags($new_instance['title']) : '';
-        $instance['text'] = (!empty($new_instance['text'])) ? $new_instance['text'] : '';
+        $instance['text'] = (!empty($new_instance['text'])) ? $new_instance['text'] : ''; // Atribui sem filtragem
 
         return $instance;
     }
 }
+
 
 
 // Register Widget
