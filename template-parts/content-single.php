@@ -119,11 +119,6 @@
                 }
                 ?>
 
-                <?php if (is_active_sidebar('global-footer-banner')) : ?>
-                    <div class="post-ads">
-                        <?php dynamic_sidebar('global-footer-banner'); ?>
-                    </div>
-                <?php endif; ?>
             </div>
 
         </article>
