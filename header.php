@@ -30,6 +30,10 @@
             get_template_part('template-parts/sidebars/global-header-sidebar');
         }
 
+        if( is_front_page() ) {
+            get_template_part('template-parts/sidebars/template-page-sidebar');
+        }
+
         ?>
         <div class="topbar">
             <div class="container">

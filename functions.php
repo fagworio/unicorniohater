@@ -16,7 +16,6 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script('main-script', get_template_directory_uri() . '/main.js', array('jquery'), THEME_VERSION, true);
 });
 
-
 //Remove Gutemberg
 add_filter('use_block_editor_for_post_type', '__return_false', 10);
 // Don't load Gutenberg-related stylesheets.
@@ -172,6 +171,15 @@ add_action('widgets_init', function () {
     register_sidebar(array(
         'name'          => 'Footer Banner Global',
         'id'            => 'global-footer-banner',
+        'before_widget' => '<div class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ));
+
+    register_sidebar(array(
+        'name'          => 'Template Home - Header Sidebar',
+        'id'            => 'template-home-top-sidebar',
         'before_widget' => '<div class="widget %2$s">',
         'after_widget'  => '</div>',
         'before_title'  => '<h3 class="widget-title">',
@@ -455,58 +463,6 @@ class Searchbar_Widget extends WP_Widget {
     }
 }
 
-class Custom_Ads extends WP_Widget {
-
-    // Construtor do Widget
-    public function __construct() {
-        parent::__construct(
-            'custom_ads_widget', // Base ID
-            'Custom Ads', // Nome
-            array( 'description' => 'Um widget personalizado que permite HTML e JavaScript.' ) // Args
-        );
-    }
-
-    // Front-end do widget
-    public function widget( $args, $instance ) {
-        $title = apply_filters( 'widget_title', $instance['title'] );
-
-        echo $args['before_widget'];
-        if ( ! empty( $title ) ) {
-            echo $args['before_title'] . $title . $args['after_title'];
-        }
-
-        echo !empty($instance['text']) ? $instance['text'] : '';
-
-        echo $args['after_widget'];
-    }
-
-    // Back-end do formulário do widget
-    public function form( $instance ) {
-        $title = isset( $instance['title'] ) ? $instance['title'] : 'Novo Título';
-        $text = isset( $instance['text'] ) ? $instance['text'] : '';
-        ?>
-        <p>
-            <label for="<?php echo $this->get_field_id( 'title' ); ?>">Título:</label> 
-            <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
-        </p>
-        <p>
-            <label for="<?php echo $this->get_field_id( 'text' ); ?>">Conteúdo (HTML/JS permitido):</label> 
-            <textarea class="widefat" rows="16" id="<?php echo $this->get_field_id( 'text' ); ?>" name="<?php echo $this->get_field_name( 'text' ); ?>"><?php echo esc_textarea( $text ); ?></textarea>
-        </p>
-        <?php 
-    }
-
-    // Atualizando o widget substituindo as instâncias antigas por novas
-    public function update( $new_instance, $old_instance ) {
-        $instance = array();
-        $instance['title'] = (!empty($new_instance['title'])) ? strip_tags($new_instance['title']) : '';
-        $instance['text'] = (!empty($new_instance['text'])) ? $new_instance['text'] : ''; // Atribui sem filtragem
-
-        return $instance;
-    }
-}
-
-
 
 // Register Widget
 add_action( 'widgets_init', function () {
@@ -514,7 +470,6 @@ add_action( 'widgets_init', function () {
     register_widget( 'Posts_By_Category' );
     register_widget('Popular_Posts_Widget');
     register_widget('Searchbar_Widget');
-    register_widget( 'Custom_Ads' );
 });
 
 
