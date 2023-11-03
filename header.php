@@ -27,14 +27,14 @@
         <?php
         get_critical_css('header.min.css');
         if ( !is_front_page() ) {
-            get_template_part('template-parts/global-header-sidebar');
+            get_template_part('template-parts/sidebars/global-header-sidebar');
         }
 
         ?>
         <div class="topbar">
             <div class="container">
                 <div class="topbar-right">
-                    <?php get_template_part('template-parts/global-search-sidebar'); ?>
+                    <?php get_template_part('template-parts/sidebars/global-search-sidebar'); ?>
                 </div>
             </div>
         </div>
